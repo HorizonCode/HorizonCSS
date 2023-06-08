@@ -19,6 +19,7 @@
 html,
 body {
   height: 100%;
+  background-color: #121212;
 }
 
 body {
@@ -42,6 +43,7 @@ select {
   font: inherit;
 }
 
+a,
 p,
 h1,
 h2,
@@ -50,6 +52,9 @@ h4,
 h5,
 h6 {
   overflow-wrap: break-word;
+  font-family: 'Work Sans', sans-serif;
+  color: #fff;
+  font-weight: 400;
 }
 
 #root,
@@ -89,9 +94,9 @@ h6 {
 * Scrollbar End
 */
 
-body {
-  background-color: #121212;
-}
+/*
+* Navbar Start
+*/
 
 nav {
   display: flex;
@@ -237,3 +242,27 @@ nav a.nav-logo:hover {
   }
 
 }
+
+/*
+* Navbar End
+*/
+
+/*
+* Text Position Start
+*/
+
+.t-start {
+  text-align: start;
+}
+
+.t-center {
+  text-align: center;
+}
+
+.t-end {
+  text-align: end;
+}
+
+/*
+* Text Position End
+*/
