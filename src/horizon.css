@@ -1,0 +1,238 @@
+/*
+* Custom Fonts
+*/
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/*
+* Reset Start
+*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+#root,
+#__next {
+  isolation: isolate;
+}
+
+/*
+* Reset End
+*/
+
+/*
+* Scrollbar Start
+*/
+/* width */
+::-webkit-scrollbar {
+  display: none;
+  height: 2px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/*
+* Scrollbar End
+*/
+
+body {
+  background-color: #121212;
+}
+
+nav {
+  display: flex;
+  flex-flow: row;
+  padding: 20px;
+  background: #282828;
+}
+
+nav div {
+  display: flex;
+  flex-flow: row;
+  vertical-align: baseline;
+  align-items: center;
+  gap: 20px;
+}
+
+nav a.nav-logo {
+  display: flex;
+  flex-flow: row;
+  vertical-align: baseline;
+  align-items: center;
+  gap: 20px;
+  padding: .25rem .5rem;
+  margin-right: 50px;
+}
+
+nav div.nav-menu {
+  display: none;
+}
+
+nav div.nav-logo .nav-logo-icon {
+  font-size: 26px;
+  color: #fff;
+}
+
+nav a.nav-logo {
+  background-color: #191919;
+  border-radius: .75rem;
+  gap: 10px;
+  font-size: 24px;
+  font-family: 'Work Sans', sans-serif;
+  color: #fff;
+  text-decoration: none;
+  padding: .55rem 1rem;
+  transition: all .25s ease-in-out;
+}
+
+nav div li {
+  list-style: none;
+}
+
+nav div li a {
+  display: block;
+  font-size: 18px;
+  font-family: 'Work Sans', sans-serif;
+  color: #fff;
+  text-decoration: none;
+  list-style: none;
+  background-color: #232323;
+  padding: .5rem 1.25rem;
+  border-radius: .75rem;
+  transition: all .25s ease-in-out;
+}
+
+nav div li:hover a,
+nav div li a.active {
+  scale: 1.02;
+  background-color: #161616;
+}
+
+nav a.nav-logo:hover {
+  scale: 1.02;
+}
+
+@media screen and (max-width: 850px) {
+
+  nav {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-flow: column;
+    padding: 20px;
+    background: #282828;
+  }
+
+  nav div {
+    display: flex;
+    flex-flow: column;
+    vertical-align: baseline;
+    align-items: center;
+    gap: 20px;
+    white-space: nowrap;
+  }
+
+  nav a.nav-logo {
+    width: 100%;
+    margin-right: 0;
+    justify-content: center;
+    padding: .55rem 1rem;
+  }
+
+  nav div li {
+    width: calc(100% - 1rem);
+  }
+
+  nav div li a {
+    width: 100%;
+  }
+
+  nav div li:hover a {
+    scale: 1.01;
+  }
+
+  nav div.top-row div.nav-menu {
+    font-size: 32px;
+    color: #fff;
+    display: inherit;
+    float: left;
+    text-align: start;
+    cursor: pointer;
+    user-select: none;
+  }
+
+  nav div.top-row {
+    display: flex;
+    flex-flow: row;
+    vertical-align: baseline;
+  }
+
+  nav div.nav-links {
+    gap: 30px;
+    opacity: 0;
+    overflow: hidden;
+    transition: all .25s ease-in-out;
+  }
+
+  nav div.nav-links.extended {
+    visibility: visible;
+    gap: 10px;
+    margin-top: 15px;
+    opacity: 1;
+  }
+
+}
