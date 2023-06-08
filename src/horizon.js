@@ -30,7 +30,8 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     if (window.innerWidth <= 850) {
-      navMenuHeight = navLinks.clientHeight;
+      const offset = Array.from(navLinks.children).reduce((acc, _child) => acc - (70 / 2), navLinks.clientHeight);
+      navMenuHeight = offset;
       navLinks.style.height = "0px";
     }
 
@@ -42,7 +43,8 @@ document.addEventListener("DOMContentLoaded", () => {
           navLinks.style.height = "";
         } else {
           if (navMenuHeight === -1) {
-            navMenuHeight = navLinks.clientHeight;
+            const offset = Array.from(navLinks.children).reduce((acc, _child) => acc - (70 / 2), navLinks.clientHeight);
+            navMenuHeight = offset;
             navLinks.style.height = "0px";
           }
           if (navMenuExtended) {
