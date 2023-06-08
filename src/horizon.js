@@ -43,7 +43,7 @@ document.addEventListener("DOMContentLoaded", () => {
           navLinks.style.height = "";
         } else {
           if (navMenuHeight === -1) {
-            const offset = Array.from(navLinks.children).reduce((acc, _child) => acc - (70 / 2), navLinks.clientHeight);
+            const offset = navLinks.clientHeight;
             navMenuHeight = offset;
             navLinks.style.height = "0px";
           }
