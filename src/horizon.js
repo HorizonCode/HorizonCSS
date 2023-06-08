@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     if (window.innerWidth <= 850) {
-      navMenuHeight = navLinks.clientHeight - 60;
+      navMenuHeight = navLinks.clientHeight;
       navLinks.style.height = "0px";
     }
 
@@ -42,7 +42,7 @@ document.addEventListener("DOMContentLoaded", () => {
           navLinks.style.height = "";
         } else {
           if (navMenuHeight === -1) {
-            navMenuHeight = navLinks.clientHeight - 60;
+            navMenuHeight = navLinks.clientHeight;
             navLinks.style.height = "0px";
           }
           if (navMenuExtended) {
