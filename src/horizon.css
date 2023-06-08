@@ -225,6 +225,7 @@ nav a.nav-logo:hover {
     gap: 30px;
     opacity: 0;
     overflow: hidden;
+    justify-content: center;
     transition: all .25s ease-in-out;
   }
 
