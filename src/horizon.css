@@ -234,6 +234,11 @@ nav a.nav-logo:hover {
 
   nav div.nav-links {
     gap: 70px;
+    position: fixed;
+    width: 100%;
+    top: 79px;
+    left: 0;
+    background-color: #282828;
     opacity: 0;
     overflow: hidden;
     justify-content: center;
