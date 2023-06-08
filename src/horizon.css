@@ -222,11 +222,11 @@ nav a.nav-logo:hover {
   }
 
   nav div.nav-links {
-    gap: 30px;
+    gap: 70px;
     opacity: 0;
     overflow: hidden;
     justify-content: center;
-    transition: all .25s ease-in-out;
+    transition: all .6s cubic-bezier(0.77, 0, 0.175, 1);
   }
 
   nav div.nav-links.extended {
