@@ -60,6 +60,9 @@ document.addEventListener("DOMContentLoaded", () => {
     navMenu.onclick = () => {
       if (navLinks) {
         navMenuExtended = navLinks.classList.toggle("extended");
+        if (navMenuExtended) navMenu.classList.add("extended");
+        else navMenu.classList.remove("extended");
+
         navLinks.style.height = navMenuExtended ? navMenuHeight + "px" : 0;
       }
     }

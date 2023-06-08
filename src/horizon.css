@@ -222,8 +222,18 @@ nav a.nav-logo:hover {
     display: inherit;
     float: left;
     text-align: start;
+    width: 60px;
+    height: 50px;
+    scale: 1.2;
+    border-radius: 100%;
+    justify-content: center;
     cursor: pointer;
     user-select: none;
+    transition: background-color .35s ease-in-out;
+  }
+
+  nav div.top-row div.nav-menu.extended {
+    background: #00000042;
   }
 
   nav div.top-row {
