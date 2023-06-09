@@ -17,6 +17,15 @@ document.addEventListener("DOMContentLoaded", () => {
         }
       }
     }
+    addEventListener("scroll", () => {
+      const scrollPos = window.scrollY;
+      if (scrollPos > 0) {
+        navMenuExtended = false;
+        navLinks.classList.remove("extended");
+        navMenu.classList.remove("extended");
+        navLinks.style.height = "";
+      }
+    })
     addEventListener("hashchange", (event) => {
       const currentHash = location.hash;
       for (const child of navLinks.children) {
@@ -35,7 +44,7 @@ document.addEventListener("DOMContentLoaded", () => {
       navLinks.style.height = "0px";
     }
 
-    window.onresize = () => {
+    addEventListener("resize", () => {
       if (navLinks) {
         const resizedTo = window.innerWidth;
         if (resizedTo > 850) {
@@ -54,9 +63,8 @@ document.addEventListener("DOMContentLoaded", () => {
             navLinks.style.height = "0px";
           }
         }
-
       }
-    }
+    });
     navMenu.onclick = () => {
       if (navLinks) {
         navMenuExtended = navLinks.classList.toggle("extended");
